@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# remove our artifacts
+rm -Rf ~/.m2/repository/com/walterjwhite
+
+# automatically format Java code
+if [ -e /usr/bin/format-java-code ]
+then
+	echo -e "formatting Java code"
+	/usr/bin/format-java-code
+fi
+
+# required for qulice
+touch /tmp/license.txt
+mvn clean install -Dmaven.test.skip=true
+
+exit $?
