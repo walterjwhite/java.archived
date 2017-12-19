@@ -1,3 +1,15 @@
 [submodule "parent"]
 	path = parent
 	url = git@github.com:walterjwhite/parent.git
+[submodule "infastructure/guice"]
+	path = infastructure/guice
+	url = git@github.com:walterjwhite/guice.git
+[submodule "infastructure/logging"]
+	path = infastructure/logging
+	url = git@github.com:walterjwhite/logging.git
+[submodule "infastructure/dependencies"]
+	path = infastructure/dependencies
+	url = git@github.com:walterjwhite/dependencies.git
+[submodule "infastructure/datastore"]
+	path = infastructure/datastore
+	url = git@github.com:walterjwhite/datastore.git
