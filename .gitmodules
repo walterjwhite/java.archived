@@ -13,3 +13,39 @@
 [submodule "infastructure/datastore"]
 	path = infrastructure/datastore
 	url = git@github.com:walterjwhite/datastore.git
+[submodule "modules/datetime"]
+	path = modules/datetime
+	url = git@github.com:walterjwhite/datetime.git
+[submodule "modules/pipe"]
+	path = modules/pipe
+	url = git@github.com:walterjwhite/pipe.git
+[submodule "modules/shell"]
+	path = modules/shell
+	url = git@github.com:walterjwhite/shell.git
+[submodule "modules/serialization"]
+	path = modules/serialization
+	url = git@github.com:walterjwhite/serialization.git
+[submodule "modules/encryption"]
+	path = modules/encryption
+	url = git@github.com:walterjwhite/encryption.git
+[submodule "modules/csv"]
+	path = modules/csv
+	url = git@github.com:walterjwhite/csv.git
+[submodule "modules/index"]
+	path = modules/index
+	url = git@github.com:walterjwhite/index.git
+[submodule "modules/ssh"]
+	path = modules/ssh
+	url = git@github.com:walterjwhite/ssh.git
+[submodule "modules/queue"]
+	path = modules/queue
+	url = git@github.com:walterjwhite/queue.git
+[submodule "modules/file"]
+	path = modules/file
+	url = git@github.com:walterjwhite/file.git
+[submodule "modules/google"]
+	path = modules/google
+	url = git@github.com:walterjwhite/google.git
+[submodule "modules/amazon"]
+	path = modules/amazon
+	url = git@github.com:walterjwhite/amazon.git
