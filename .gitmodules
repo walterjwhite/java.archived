@@ -49,3 +49,6 @@
 [submodule "modules/amazon"]
 	path = modules/amazon
 	url = git@github.com:walterjwhite/amazon.git
+[submodule "modules/compression"]
+	path = modules/compression
+	url = git@github.com:walterjwhite/compression.git
