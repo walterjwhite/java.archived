@@ -12,6 +12,11 @@ fi
 
 # required for qulice
 touch /tmp/license.txt
-mvn clean install -Dmaven.test.skip=true
+if [ "$#" -ge "1" ]
+then
+	_options="-Dmaven.test.skip=true"
+fi
+
+mvn clean install $_options
 
 exit $?
