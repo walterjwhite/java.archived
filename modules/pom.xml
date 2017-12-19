@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.walterjwhite</groupId>
-    <artifactId>infrastructure</artifactId>
+    <artifactId>modules</artifactId>
     <packaging>pom</packaging>
 
     <modules>
