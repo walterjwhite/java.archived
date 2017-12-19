@@ -7,7 +7,7 @@
     <parent>
 		<groupId>com.walterjwhite</groupId>
 		<artifactId>java</artifactId>
-		<version>0.0.15</version>
+		<version>0.0.15-SNAPSHOT</version>
     </parent>
 
     <groupId>com.walterjwhite</groupId>
