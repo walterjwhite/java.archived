@@ -17,6 +17,8 @@ then
 	_options="-Dmaven.test.skip=true"
 fi
 
+# setup some dummy values so the properties are at least set
+./setup-environment
 mvn clean install $_options
 
 exit $?
