@@ -8,3 +8,4 @@ export com_walterjwhite_google_property_GoogleCloudAccessToken=test
 export com_walterjwhite_google_property_GoogleCloudSubscriptionId=test
 export com_walterjwhite_encryption_property_IVFilePath=/dev/null
 export com_walterjwhite_encryption_property_KeyFilePath=/dev/null
+export com_walterjwhite_shell_api_property_NodeId=test
