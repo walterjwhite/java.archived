@@ -38,6 +38,14 @@
             <artifactId>logging</artifactId>
             <version>0.0.15-SNAPSHOT</version>
         </dependency>
+
+        <!--
+        <dependency>
+            <groupId>com.walterjwhite.infrastructure</groupId>
+            <artifactId>timeout</artifactId>
+            <version>0.0.15-SNAPSHOT</version>
+        </dependency>
+        -->
     </dependencies>
 
     <build>
@@ -60,8 +68,14 @@
                         <aspectLibrary>
                             <groupId>com.walterjwhite.infrastructure</groupId>
                             <artifactId>logging</artifactId>
-                            <!--<version>0.0.15-SNAPSHOT</version>-->
                         </aspectLibrary>
+
+                        <!--
+                        <aspectLibrary>
+                            <groupId>com.walterjwhite.infrastructure</groupId>
+                            <artifactId>timeout</artifactId>
+                        </aspectLibrary>
+                        -->
                     </aspectLibraries>
                 </configuration>
                 <executions>

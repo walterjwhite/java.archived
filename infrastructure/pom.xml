@@ -19,5 +19,6 @@
         <module>datastore</module>
         <module>guice</module>
         <module>logging</module>
+        <module>timeout</module>
     </modules>
 </project>

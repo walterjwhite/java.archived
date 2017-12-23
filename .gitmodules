@@ -52,3 +52,6 @@
 [submodule "modules/compression"]
 	path = modules/compression
 	url = git@github.com:walterjwhite/compression.git
+[submodule "infrastructure/timeout"]
+	path = infrastructure/timeout
+	url = git@github.com:walterjwhite/timeout.git
