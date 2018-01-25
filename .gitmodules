@@ -57,7 +57,7 @@
 	url = git@github.com:walterjwhite/linux-builder.git
 [submodule "modules/ip"]
 	path = modules/ip
-	url = git@github.com:walterjwhite/ip
+	url = git@github.com:walterjwhite/ip.git
 [submodule "modules/download"]
 	path = modules/download
 	url = git@github.com:walterjwhite/download.git
