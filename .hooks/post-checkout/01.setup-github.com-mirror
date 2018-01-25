@@ -1,0 +1,23 @@
+#!/bin/bash
+
+_PWD=$(pwd)
+
+for p in $(find . | grep \\.git$)
+do
+	cd $(dirname $p)
+
+	echo -e "setting mirror $p"
+	_developer_connection=$(grep developerConnection pom.xml | sed -e "s/^.*>scm\:git\://" | sed -e "s/<.*$//")
+	
+	if [ -n "$_developer_connection" ]
+	then
+		echo -e "git remote add github.com $_developer_connection"
+#		git remote remove github.com
+		git remote add github.com $_developer_connection
+	else
+		echo -e "set developer connection:$p"
+		exit 1
+	fi
+
+	cd $_PWD
+done

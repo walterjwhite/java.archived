@@ -1,0 +1,26 @@
+#!/bin/bash
+
+./helpers/setup-environment
+
+_VERSION=0.0.15
+_DO_RELEASE=1
+
+for p in $(find . -maxdepth 1 -type d | grep -v "^\\.$" | grep -v ".idea" | grep -P "[\d]+" | sort -u)
+do
+	echo -e $p
+	cd $p
+	
+	# check if we have sensitive information
+	# TestModules
+	grep -Pr "(AmazonSecretAccessKey|AmazonAccessKeyId|GoogleCloudBucket|GoogleCloudProjectId|GoogleCloudAccessToken)" . | grep PropertyImpl
+	find . -type f | grep application.properties
+	
+	if [ "$_DO_RELEASE" -eq "1" ]
+	then
+		mvn versions:set -DnewVersion=$_VERSION
+		git commit -am 'release' && git push origin
+		mvn clean deploy -B
+	fi
+	
+	cd ..
+done

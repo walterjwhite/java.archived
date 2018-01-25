@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for p in $(find . -maxdepth 1 -type d | grep -v "^\\.$" | grep -v ".idea" | grep -P "[\d]+" | sort -u)
+do
+	echo -e $p
+	cd $p
+	
+	nano pom.xml
+	git commit -am 'updated pom' && git push origin
+	
+	cd ..
+done

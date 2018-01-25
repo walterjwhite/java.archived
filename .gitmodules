@@ -1,6 +1,3 @@
-[submodule "parent"]
-	path = parent
-	url = git@github.com:walterjwhite/parent.git
 [submodule "infastructure/guice"]
 	path = infrastructure/guice
 	url = git@github.com:walterjwhite/guice.git
@@ -55,3 +52,12 @@
 [submodule "infrastructure/timeout"]
 	path = infrastructure/timeout
 	url = git@github.com:walterjwhite/timeout.git
+[submodule "modules/linux-builder"]
+	path = modules/linux-builder
+	url = git@github.com:walterjwhite/linux-builder.git
+[submodule "modules/ip"]
+	path = modules/ip
+	url = git@github.com:walterjwhite/ip
+[submodule "modules/download"]
+	path = modules/download
+	url = git@github.com:walterjwhite/download

@@ -19,12 +19,17 @@
         <module>compression</module>
         <module>csv</module>
         <module>datetime</module>
+        <module>download</module>
         <module>encryption</module>
         <module>file</module>
         
         <module>google</module>
+
         <module>index</module>
-        
+        <module>ip</module>
+
+        <module>linux-builder</module>
+
         <module>pipe</module>
         <module>queue</module>
         <module>serialization</module>

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+at -f ./launch-intellij now
+
