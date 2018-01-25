@@ -60,4 +60,4 @@
 	url = git@github.com:walterjwhite/ip
 [submodule "modules/download"]
 	path = modules/download
-	url = git@github.com:walterjwhite/download
+	url = git@github.com:walterjwhite/download.git
