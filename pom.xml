@@ -28,6 +28,40 @@
 
     <build>
         <plugins>
+			<!-- https://stackoverflow.com/questions/770364/what-is-a-good-way-to-handle-a-version-number-in-a-java-application -->
+			<!--
+			<plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>getting-scm.revision</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>update</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      -->
+      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>true</doCheck>
+          <doUpdate>false</doUpdate>
+        </configuration>
+      </plugin>
+      
             <!-- Project Structure -> Modules -> Click generated-sources folder (and make it a sources folder) -->
             <!-- https://stackoverflow.com/questions/5170620/unable-to-use-intellij-with-a-generated-sources-folder#5171035 -->
             <plugin>
@@ -74,7 +108,20 @@
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            
+						  <!--<Implementation-Version>${this.version}.${scm.revision}</Implementation-Version>-->
+
+						  
+						  <!--
+						  Package p = getClass().getPackage();
+						String version = p.getImplementationVersion();
+						-->
                         </manifest>
+                        
+                        <manifestEntries>
+						<Implementation-Version>${version}</Implementation-Version>
+						  <Implementation-Build>${version}.${buildNumber}</Implementation-Build>
+						</manifestEntries>
                     </archive>
                     <resources>
                         <entityReference>
@@ -214,9 +261,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/walterjwhite/parent.git</connection>
-        <developerConnection>scm:git:git@github.com:walterjwhite/parent.git</developerConnection>
-        <url>https://github.com/walterjwhite/parent.git</url>
+        <connection>scm:git:ssh://git@localhost:/projects/active/github.com/java.git</connection>
+        <developerConnection>scm:git:ssh://git@localhost:/projects/active/github.com/java.git</developerConnection>
+        <url>https://github.com/walterjwhite/java.git</url>
     </scm>
 
     <distributionManagement>

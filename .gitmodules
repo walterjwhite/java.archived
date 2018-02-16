@@ -10,6 +10,7 @@
 [submodule "infastructure/datastore"]
 	path = infrastructure/datastore
 	url = git@github.com:walterjwhite/datastore.git
+
 [submodule "modules/datetime"]
 	path = modules/datetime
 	url = git@github.com:walterjwhite/datetime.git
@@ -61,3 +62,30 @@
 [submodule "modules/download"]
 	path = modules/download
 	url = git@github.com:walterjwhite/download.git
+[submodule "modules/template"]
+	path = modules/template
+	url = git@github.com:walterjwhite/template.git
+[submodule "modules/email"]
+	path = modules/email
+	url = git@github.com:walterjwhite/email.git
+[submodule "modules/exchange"]
+	path = modules/exchange
+	url = git@github.com:walterjwhite/exchange.git
+[submodule "modules/person"]
+	path = modules/person
+	url = git@github.com:walterjwhite/person.git
+[submodule "modules/print"]
+	path = modules/print
+	url = git@github.com:walterjwhite/print.git
+[submodule "modules/calendar"]
+	path = modules/calendar
+	url = git@github.com:walterjwhite/calendar.git
+[submodule "modules/browser"]
+	path = modules/browser
+	url = git@github.com:walterjwhite/browser.git
+[submodule "modules/machine-learning"]
+	path = modules/machine-learning
+	url = git@github.com:walterjwhite/machine-learning.git
+[submodule "modules/remote"]
+	path = modules/remote
+	url = git@github.com:walterjwhite/remote.git

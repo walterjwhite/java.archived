@@ -16,11 +16,18 @@
 
     <modules>
         <module>amazon</module>
+        <module>browser</module>
+        <module>calendar</module>
         <module>compression</module>
         <module>csv</module>
         <module>datetime</module>
         <module>download</module>
+<<<<<<< HEAD
+=======
+        <module>email</module>
+>>>>>>> 551fed2ad6cb2676b5934330f98a9c75cfb9c96c
         <module>encryption</module>
+        <module>exchange</module>
         <module>file</module>
         
         <module>google</module>
@@ -29,12 +36,22 @@
         <module>ip</module>
 
         <module>linux-builder</module>
+<<<<<<< HEAD
 
+=======
+        <module>machine-learning</module>
+
+        <module>person</module>
+>>>>>>> 551fed2ad6cb2676b5934330f98a9c75cfb9c96c
         <module>pipe</module>
+        <module>print</module>
         <module>queue</module>
+        <module>remote</module>
         <module>serialization</module>
         <module>shell</module>
         <module>ssh</module>
+
+        <module>template</module>
     </modules>
 
     <dependencies>

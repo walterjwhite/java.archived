@@ -13,7 +13,7 @@
     <groupId>com.walterjwhite</groupId>
     <artifactId>infrastructure</artifactId>
     <packaging>pom</packaging>
-
+    
     <modules>
         <module>dependencies</module>
         <module>datastore</module>

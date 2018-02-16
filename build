@@ -12,10 +12,10 @@ fi
 
 # required for qulice
 touch /tmp/license.txt
-if [ "$#" -ge "1" ]
-then
+#if [ "$#" -ge "1" ]
+#then
 	_options="-Dmaven.test.skip=true"
-fi
+#fi
 
 # setup some dummy values so the properties are at least set
 #./setup-environment

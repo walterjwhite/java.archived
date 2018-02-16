@@ -1,0 +1,33 @@
+#!/bin/bash
+
+_setup_() {
+	git remote add github git@github.com:walterjwhite/${p}.git
+}
+
+p=java
+_setup_
+
+_pwd=$(pwd)
+for p in $(ls infrastructure)
+do
+	if [ ! -d infrastructure/$p ]
+	then
+		continue
+	fi
+	
+	cd infrastructure/$p
+	_setup_
+	cd $_pwd
+done
+
+for p in $(ls modules)
+do
+	if [ ! -d modules/$p ]
+	then
+		continue
+	fi
+	
+	cd modules/$p
+	_setup_
+	cd $_pwd
+done

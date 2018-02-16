@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf .idea
+
+find . -type f -name '*.iml' -print0 | while IFS= read -r -d '' file
+do
+	rm -f "$file"
+done

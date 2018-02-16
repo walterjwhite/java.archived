@@ -1,0 +1,2 @@
+- write a wrapper for junit tests to assist with Guice setup: https://fabiostrozzi.eu/2011/03/27/junit-tests-easy-guice/
+- use mockito to mock: https://stackoverflow.com/questions/27453393/mockito-and-guice-mocking-a-provides-method
